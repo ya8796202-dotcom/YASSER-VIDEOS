@@ -1,37 +1,78 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <title>استوديو ياسر - بدون خادم</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="manifest" href="manifest.json">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>استوديو ياسر لصناعة الفيديو</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>🎬 استوديو ياسر لصناعة الفيديو</h1>
-    <nav>
-      <button id="newProject">مشروع جديد</button>
-      <button id="saveProject">حفظ</button>
-      <button id="loadProject">تحميل</button>
-      <button id="exportVideo">تصدير</button>
+  <header class="app-header glass">
+    <div class="brand">
+      <span class="logo">YVS</span>
+      <h1>استوديو ياسر لصناعة الفيديو</h1>
+    </div>
+    <nav class="actions">
+      <button id="newProject" class="btn">مشروع جديد</button>
+      <button id="saveProject" class="btn">حفظ</button>
+      <button id="loadProject" class="btn">تحميل</button>
+      <button id="exportVideo" class="btn btn-primary">تصدير</button>
     </nav>
   </header>
 
-  <main>
-    <aside>
-      <h2>وسائط</h2>
-      <input type="file" id="filePicker" multiple accept="image/*,audio/*,video/*">
-      <ul id="mediaList"></ul>
+  <main class="app-main">
+    <aside class="sidebar glass">
+      <section>
+        <h2>وسائط</h2>
+        <label class="upload-label">
+          <input type="file" id="filePicker" multiple accept="image/*,audio/*,video/*" />
+          اختر صور/صوت/فيديو
+        </label>
+        <ul id="mediaList" class="media-list"></ul>
+      </section>
+      <section>
+        <h2>قوالب</h2>
+        <ul id="templatesList" class="templates-list"></ul>
+      </section>
     </aside>
 
     <section class="editor">
-      <canvas id="previewCanvas" width="640" height="360"></canvas>
-      <div id="timeline"></div>
+      <div class="preview glass">
+        <canvas id="previewCanvas" width="960" height="540"></canvas>
+      </div>
+      <div class="timeline-panel glass">
+        <div class="timeline-toolbar">
+          <span>تايملاين</span>
+          <div class="toolbar-actions">
+            <button id="zoomOut" class="btn-sm">-</button>
+            <span id="zoomLabel">100%</span>
+            <button id="zoomIn" class="btn-sm">+</button>
+          </div>
+        </div>
+        <div id="timeline"></div>
+      </div>
     </section>
+
+    <aside class="panel glass">
+      <section>
+        <h2>خصائص المشروع</h2>
+        <label>العرض: <input id="projW" type="number" value="1920"></label>
+        <label>الارتفاع: <input id="projH" type="number" value="1080"></label>
+        <label>FPS: <input id="projFps" type="number" value="30"></label>
+        <label>خلفية: <input id="projBg" type="color" value="#000000"></label>
+      </section>
+      <section>
+        <h2>المقطع المحدد</h2>
+        <div id="clipProps" class="clip-props">لا يوجد مقطع محدد</div>
+      </section>
+    </aside>
   </main>
 
-  <footer>
-    <small>© 2025 ياسر أحمد حمدي</small>
+  <footer class="app-footer glass">
+    <small>© 2025 Yasser Ahmed Hamdy — هوية أنيقة ومخصصة</small>
+    <span id="status" class="status">جاهز</span>
   </footer>
 
   <script src="timeline.js"></script>
