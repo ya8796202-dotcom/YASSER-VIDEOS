@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>استوديو ياسر - بدون خادم</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>🎬 استوديو ياسر لصناعة الفيديو</h1>
+    <nav>
+      <button id="newProject">مشروع جديد</button>
+      <button id="saveProject">حفظ</button>
+      <button id="loadProject">تحميل</button>
+      <button id="exportVideo">تصدير</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <h2>وسائط</h2>
+      <input type="file" id="filePicker" multiple accept="image/*,audio/*,video/*">
+      <ul id="mediaList"></ul>
+    </aside>
+
+    <section class="editor">
+      <canvas id="previewCanvas" width="640" height="360"></canvas>
+      <div id="timeline"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 ياسر أحمد حمدي</small>
+  </footer>
+
+  <script src="timeline.js"></script>
+  <script src="storage.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
