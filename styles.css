@@ -1,0 +1,11 @@
+body { margin:0; font-family:"Cairo",sans-serif; background:#0f172a; color:#e5e7eb; }
+header { background:#111827; padding:12px; display:flex; justify-content:space-between; }
+nav button { margin:0 4px; padding:6px 12px; background:#1f2937; color:#fff; border:none; border-radius:4px; }
+aside { background:#111827; padding:12px; width:200px; float:right; }
+.editor { margin-right:200px; padding:12px; }
+#timeline { background:#1f2937; height:120px; overflow-x:auto; }
+.clip { display:inline-block; margin:4px; padding:6px; border-radius:4px; color:#000; }
+.clip-image { background:#0ea5e9; }
+.clip-audio { background:#22c55e; }
+.clip-video { background:#1d4ed8; }
+.clip-text { background:#f59e0b; }
