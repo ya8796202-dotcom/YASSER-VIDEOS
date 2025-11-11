@@ -1,6 +1,10 @@
-export function saveProject(project) {
-  localStorage.setItem('videoProject', JSON.stringify(project));
-}
-export function loadProject() {
-  return JSON.parse(localStorage.getItem('videoProject') || '{}');
-}
+export const Storage = {
+  save(project) {
+    localStorage.setItem('yvs_project', JSON.stringify(project));
+    return true;
+  },
+  load() {
+    const raw = localStorage.getItem('yvs_project');
+    return raw ? JSON.parse(raw) : null;
+  }
+};
