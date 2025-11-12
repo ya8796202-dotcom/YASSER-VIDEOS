@@ -1,6 +1,12 @@
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open('yvs-v1').then(c => c.addAll(['/','/styles.css','/main.js'])));
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('yvs-cache-v1').then(cache => cache.addAll([
+      './', './index.html', './styles.css', './main.js', './timeline.js', './storage.js', './manifest.json'
+    ]))
+  );
 });
-self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(resp => resp || fetch(event.request))
+  );
 });
