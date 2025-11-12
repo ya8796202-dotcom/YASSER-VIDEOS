@@ -1,10 +1,10 @@
 {
   "name": "Yasser Video Studio",
   "short_name": "YVS",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#111827",
+  "theme_color": "#0f172a",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }
   ]
