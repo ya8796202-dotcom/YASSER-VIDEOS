@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نصائح للمبدعين</title>
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="منصة نصائح للمبدعين — أفكار عملية، أدوات، ومبادئ تساعدك تبني مشروعك بإبداع وثقة." />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">YA</div>
+      <div class="titles">
+        <h1>نصائح للمبدعين</h1>
+        <p>أفكار عملية قصيرة تُحرّك شغفك وتوجّه شغلك</p>
+      </div>
+    </div>
+    <button id="installBtn" class="btn install" hidden>تثبيت التطبيق</button>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <h2>ابدأ من البساطة، وسمّها باسمك</h2>
+      <p>
+        الإبداع مش فكرة واحدة؛ هو قرارات صغيرة متراكمة. هنا بنجمع لك نصائح مركّزة — من تنظيم العمل لعرض فكرتك، ومن أدوات الإنتاج لتصميم الهوية.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#principles">مبادئ</a>
+        <a class="btn ghost" href="#workflow">تدفق عمل</a>
+        <a class="btn ghost" href="#tools">أدوات</a>
+      </div>
+    </section>
+
+    <section id="principles" class="grid">
+      <div class="card">
+        <h3>وضوح الهدف</h3>
+        <p>حدّد النتيجة اللي عايز توصلها قبل بدء التنفيذ. الوضوح يقلل الفوضى ويزيد سرعة القرار.</p>
+      </div>
+      <div class="card">
+        <h3>هوية ثابتة</h3>
+        <p>اختار ألوان وخط ولغة بصرية ثابتة. التكرار يصنع الثقة ويخلق بصمة لا تُنسى.</p>
+      </div>
+      <div class="card">
+        <h3>نسخة أولى سريعة</h3>
+        <p>طلّع نموذج أولي بأقل تعقيد. بعدين حسّن بالتكرار، مش قبل ما تبدأ.</p>
+      </div>
+      <div class="card">
+        <h3>قابلية التخصيص</h3>
+        <p>ابني كل ميزة بحيث تقبل التعديل لاحقًا؛ دايمًا سيب باب التطوير مفتوح.</p>
+      </div>
+    </section>
+
+    <section id="workflow" class="card">
+      <h3>تدفق عمل عملي للمبدع</h3>
+      <ul class="list">
+        <li><strong>فكرة مختصرة:</strong> جملة واحدة تلخّص مشروعك.</li>
+        <li><strong>خريطة طريق:</strong> 3 مراحل فقط: نسخة أولى → تحسين → نشر.</li>
+        <li><strong>مكتبة مرجعية:</strong> احفظ الأكواد/القوالب/الأصول في مستودع واحد.</li>
+        <li><strong>قياس سريع:</strong> اختر مؤشر نجاح بسيط (تحميلات، وقت جلسة، تفاعل).</li>
+        <li><strong>تعلم بالتنفيذ:</strong> كل تعديل لازم يبقى له سبب واضح مرتبط بالقياس.</li>
+      </ul>
+    </section>
+
+    <section id="tools" class="grid">
+      <div class="card">
+        <h3>إدارة الأفكار</h3>
+        <p>استخدم لوحات بسيطة لتتبع المهام (To-Do / Doing / Done). خليك مرن ومباشر.</p>
+      </div>
+      <div class="card">
+        <h3>هوية بصرية</h3>
+        <p>أنشئ نظام ألوان وخطوط وأيقونات متوافق، ودوّن قواعدك لتطبيقها سريعًا في كل مشروع.</p>
+      </div>
+      <div class="card">
+        <h3>مكتبة أكواد</h3>
+        <p>كوّن Snippets جاهزة تُسرّع التطوير والتجربة. اجعلها قابلة لإعادة الاستخدام.</p>
+      </div>
+      <div class="card">
+        <h3>عرض الفكرة</h3>
+        <p>بناء صفحة واحدة واضحة يختصر طريقك للنشر والتغذية الراجعة.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>نصيحة اليوم</h3>
+      <p id="tip">كل يوم سطر… كل أسبوع ميزة. السر في الاستمرارية الصغيرة.</p>
+      <div class="actions">
+        <button class="btn" id="newTip">نصيحة عشوائية</button>
+        <button class="btn" id="saveTip">حفظ آخر نصيحة</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 نصائح للمبدعين — بصمة تُرى وتُحس.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
